@@ -1,0 +1,19 @@
+<!--pages/orderDetail/orderDetail.wxml-->
+<view class="list">
+  <view class="listItem" wx:for="{{list}}" wx:key="*this">
+    <image src="{{imgUrl}}{{item.img}}"></image>
+    <view class="right">
+      <view class="row">
+        <view class="rowleft">保洁人员：{{item.user_name}}</view>
+        <!-- <view class="rowright">{{item.status}}</view> -->
+      </view>
+      <view class="row">服务内容：{{item.xiangmu_name}}</view>
+      <view class="row">服务时间：{{item.fuwu_time}} {{item.startime}}-{{item.endtime}}</view>
+      <view class="yanshou">
+        <text wx:if="{{item.is_pinglun==0}}" data-id="{{item.id}}" data-img="{{item.img}}" data-user_name="{{item.user_name}}" data-xiangmu_name="{{item.xiangmu_name}}" data-fuwu_time="{{item.fuwu_time}}" data-startime="{{item.startime}}" data-endtime="{{item.endtime}}"
+          bindtap="tocomment">评价</text>
+        <text bindtap="toscore" data-id="{{item.id}}" style="margin-left:18rpx">验收</text>
+      </view>
+    </view>
+  </view>
+</view>

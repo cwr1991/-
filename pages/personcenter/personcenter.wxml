@@ -1,0 +1,32 @@
+<!--pages/personcenter/personcenter.wxml-->
+<view class="userInfo">
+  <image wx:if="{{headimgurl!='/default.png'}}" src="{{headimgurl}}" class="headimg"></image>
+  <image wx:else src="/images/defaulthead.png" class="headimg"></image>
+  
+  <button wx:if="{{nickname=='未设置'}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo"></button>
+
+  <view wx:if="{{nickname!='未设置' }}">{{nickname}}</view>
+  <view wx:else>获取个人信息</view>
+</view>
+
+<view class="myorder" bindtap="toorder">
+  <image src="/images/My Order@2x.png"></image>
+  <text>我的订单</text>
+</view>
+
+<view class="list">
+  <view class="listItem" bindtap="calltel">
+    <image src="/images/Customer service@2x.png"></image>
+    <view class="text">
+      <text>客服电话</text>
+      <image src="/images/lefticon.png"></image>
+    </view>
+  </view>
+  <view class="listItem" bindtap="payimg">
+    <image src="/images/about us@2x.png"></image>
+    <view class="text" style="border:0">
+      <text>收款码</text>
+      <image src="/images/lefticon.png"></image>
+    </view>
+  </view>
+</view>

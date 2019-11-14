@@ -1,0 +1,37 @@
+/* pages/payorder/payorder.wxss */
+
+.Box {
+  text-align: center;
+  width: 100%;
+  margin: 260rpx auto;
+}
+
+.Box image {
+  width: 137rpx;
+  height: 137rpx;
+}
+
+.success {
+  color: #080808;
+  font-size: 30rpx;
+  margin: 50rpx 0 70rpx;
+}
+
+.tip {
+  width: 306rpx;
+  color: #686868;
+  font-size: 26rpx;
+  margin: 0 auto;
+}
+
+.back {
+  width: 601rpx;
+  height: 90rpx;
+  background: rgba(253, 188, 40, 1);
+  border-radius: 45rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 90rpx;
+  margin:0 auto;
+  font-size: 30rpx;
+}

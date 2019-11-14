@@ -1,0 +1,28 @@
+<!--pages/comment/comment.wxml-->
+<view class="listItem">
+  <image src="{{imgUrl}}{{content.img}}"></image>
+  <view class="right">
+    <view class="row">
+      <view class="rowleft">保洁人员：{{content.user_name}}</view>
+      <view class="rowright">{{content.status}}</view>
+    </view>
+    <view class="row">服务内容：{{content.xiangmu_name}}</view>
+    <view class="row">服务时间：{{content.fuwu_time}} {{content.startime}}-{{content.endtime}}</view>
+  </view>
+</view>
+
+<textarea class="textarea" placeholder="请输入您的评论" bindinput="textarea"></textarea>
+
+<!-- 上传图片 -->
+<view class="flexbox">
+  <view class="picbox" wx:for="{{upload}}" wx:key="index">
+    <image bindtap="delete" src="/images/wrong@2x.png" class="deletepic" data-index="{{index}}"></image>
+    <image style="width:124rpx;height:124rpx;border-radius:8rpx;" src="{{item}}" mode="aspectFit"></image>
+  </view>
+  <view class="itemfile" bindtap="chooseImage">
+    <image class="addimg" src="/images/upload@2x.png"></image>
+    <view class="tip-text">上传照片</view>
+  </view>
+</view>
+
+<view class="submit" bindtap="submit" data-id="{{content.id}}" data-text="{{textarea}}" data-img="{{upload}}">提交</view>

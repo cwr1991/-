@@ -1,0 +1,7 @@
+<!--pages/payorder/payorder.wxml-->
+<view class="Box">
+  <image src="/images/success@2x.png"></image>
+  <view class="success">下单成功!</view>
+  <view class="tip">下单结果我们将在12小时内给您致电回复，请保持手机信号畅通</view>
+</view>
+<navigator open-type="switchTab"  class="back" hover-class="none" url="/pages/index/index">返回首页</navigator>

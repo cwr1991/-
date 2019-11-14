@@ -1,0 +1,98 @@
+/* pages/comment/comment.wxss */
+
+.listItem {
+  padding: 30rpx;
+  display: flex;
+}
+
+.listItem image {
+  width: 176rpx;
+  height: 176rpx;
+  border-radius: 10rpx;
+}
+
+.listItem .right {
+  flex: 1;
+  font-size: 24rpx;
+  color: #282828;
+  margin-left: 20rpx;
+}
+
+.listItem .right .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.listItem .right .row:nth-child(2) {
+  margin: 47rpx 0;
+}
+
+.listItem .right .row .rowright {
+  color: #fdbc28;
+}
+
+.textarea {
+  width: 685rpx;
+  height: 271rpx;
+  margin: 33rpx auto;
+  border: 2rpx solid rgba(181, 181, 181, 1);
+  border-radius: 8rpx;
+  text-indent: 20rpx;
+  padding-top: 20rpx;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20rpx 37rpx;
+}
+
+.picbox {
+  margin-bottom: 30rpx;
+  position: relative;
+  margin-right: 20rpx;
+}
+
+.picbox .deletepic {
+  position: absolute;
+  right: 0rpx;
+  top: -15rpx;
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.itemfile {
+  width: 162rpx;
+  height: 140rpx;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2rpx 32rpx 0px rgba(215, 215, 215, 0.49);
+  border-radius: 8rpx;
+  text-align: center;
+}
+
+.itemfile.nobg {
+  background: 0;
+  border: 1px solid #ededed;
+}
+
+.itemfile .addimg {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 30rpx auto 10rpx;
+}
+
+.itemfile .tip-text {
+  font-size: 18rpx;
+  color: #999;
+}
+
+.submit {
+  width: 601rpx;
+  height: 90rpx;
+  background: rgba(253, 188, 40, 1);
+  border-radius: 45rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 90rpx;
+  margin: 50rpx auto;
+}

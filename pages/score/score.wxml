@@ -1,0 +1,16 @@
+<!--pages/score/score.wxml-->
+<view class="top">服务满意度</view>
+
+<view class="list">
+  <view class="item" wx:for="{{list}}" wx:for-index="index" data-index="{{index+1}}">
+    <view class="title">{{index+1}}.{{item}}</view>
+    <radio-group bindchange="radioChange" data-index="{{index+1}}">
+      <radio value="1">很满意</radio>
+      <radio value="2">一般</radio>
+      <radio value="3">很差</radio>
+    </radio-group>
+  </view>
+
+</view>
+
+<view class="btn" bindtap="submit" data-id="">提交</view>

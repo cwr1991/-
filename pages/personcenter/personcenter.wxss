@@ -1,0 +1,68 @@
+/* pages/personcenter/personcenter.wxss */
+.userInfo{
+  width: 100%;
+  height: 380rpx;
+  background: #FEBF3E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  font-size: 26rpx;
+  color: #fff;
+}
+.userInfo .headimg{
+  width:180rpx;
+  height:180rpx;
+  display:block;
+  border-radius:50%;
+  margin-bottom: 20rpx;
+}
+.userInfo button{
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width:100%;
+  height:250rpx;
+  opacity:0
+}
+
+.myorder,.listItem{
+  display: flex;
+  align-items: center;
+  border-bottom: 16rpx solid #F0EDE4;
+  padding: 28rpx 37rpx;
+}
+.myorder image,.listItem image{
+  width: 31rpx;
+  height: 41rpx;
+  margin-right: 30rpx;
+}
+.myorder text,.listItem .text text{
+  color: #383735;
+  font-size: 30rpx;
+}
+.listItem:nth-of-type(1) image{
+  width: 38rpx;
+  height: 40rpx;
+}
+.listItem:nth-of-type(2) image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.listItem{
+  border: 0;
+  padding: 0 37rpx;
+}
+.listItem .text{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #E0DFDD;
+  padding: 28rpx 0;
+}
+.listItem .text image{
+  width: 14rpx;
+  height: 23rpx;
+}

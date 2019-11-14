@@ -1,0 +1,26 @@
+<!--pages/address/address.wxml-->
+<view class="form">
+  <view class="item">
+    <text>姓名</text>
+    <input class="weui-input" type="text" focus placeholder="姓名" placeholder-class="placeholder" bindinput="bindname" />
+  </view>
+
+  <view class="item">
+    <text>电话</text>
+    <input class="weui-input" type="text" focus placeholder="手机号" placeholder-class="placeholder" bindinput="bindtel" />
+  </view>
+
+  <view class="item">
+    <text>地区</text>
+    <picker mode="region" class="weui-input" value="{{region[0]}} {{region[1]}} {{region[2]}}" bindchange="bindRegionChange">{{region[0]}} {{region[1]}} {{region[2]}}</picker>
+  </view>
+
+  <view class="item">
+    <text>详细地址</text>
+    <input class="weui-input" type="text" value="{{address}}" focus placeholder="详细地址" placeholder-class="placeholder" bindinput="bindaddress" />
+  </view>
+
+  <view class="autobtn" bindtap="autoaddress">一键获取地址</view>
+</view>
+
+<view class="xiadan" bindtap="xiadan">下单</view>

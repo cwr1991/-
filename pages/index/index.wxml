@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<!-- 轮播图 -->
+<!-- <open-data  type="userAvatarUrl"></open-data> -->
+<view class="swiper-container">
+  <swiper indicator-dots="true" autoplay="true" interval="3000" duration="500" indicator-color="#afbbb9" indicator-active-color="#fbc026">
+    <swiper-item wx:for="{{swiperData}}" wx:key="*this">
+      <image src="{{imgUrl}}{{item.img}}"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<!-- 数据项 -->
+<view class="mainwork">
+  <view class="graybg" bindtap="tocompanynews">
+    <image src="/images/laba.jpg"></image>
+    <text>{{news.title}}</text>
+  </view>
+  <!-- 1保洁 -->
+  <view class="service" style="padding-top:40rpx;">
+    <view class="service-item" wx:for="{{itemData.baojie}}" wx:key="*this" data-id="{{item.id}}" bindtap="toproduct">
+      <image src="{{imgUrl}}{{item.img}}"></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+  <!-- 2管家 -->
+  <view class="service">
+    <view class="service-item" wx:for="{{itemData.guanjia}}" wx:key="*this" data-id="{{item.id}}" bindtap="noopen">
+      <image src="{{imgUrl}}{{item.img}}"></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+  <!-- 3推荐 -->
+  <view class="service">
+    <view class="service-item" wx:for="{{itemData.tuijian}}" wx:key="*this" data-id="{{item.id}}" bindtap="toproduct">
+      <image src="{{imgUrl}}{{item.img}}"></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+  <!-- 公告，评价，优秀员工 -->
+  <view class="service">
+    <view class="service-item" bindtap="tocompanynews">
+      <image src="{{imgUrl}}{{itemData.gonggao[1]}}"></image>
+      <text>{{itemData.gonggao[0]}}</text>
+    </view>
+    <view class="service-item" bindtap="tocommentlist">
+      <image src="{{imgUrl}}{{itemData.pingjia[1]}}"></image>
+      <text>{{itemData.pingjia[0]}}</text>
+    </view>
+    <view class="service-item" bindtap="togoodstaff">
+      <image src="{{imgUrl}}{{itemData.youxiu[1]}}"></image>
+      <text>{{itemData.youxiu[0]}}</text>
+    </view>
+  </view>
+</view>

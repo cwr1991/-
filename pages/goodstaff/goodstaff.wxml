@@ -1,0 +1,19 @@
+<!--pages/goodstaff/goodstaff.wxml-->
+<view class="listBox">
+  <view class="listItem" wx:for="{{stafflist}}" wx:key="*this" data-id="{{item.id}}">
+    <image src="{{imgUrl}}{{item.img}}"></image>
+    <view class="infoBox">
+      <text class="name">{{item.name}}</text>
+      <text class="remark">{{item.remark}}</text>
+      <view class="star">
+        服务指数
+        <block wx:for="{{item.light_star}}" wx:key="star">
+          <image src='/images/light_star.jpg' style="width:26rpx;height:26rpx;margin-right:6rpx"></image>
+        </block>
+        <block wx:for="{{item.dim_star}}" wx:key="star">
+          <image src='/images/dim_star.jpg' style="width:26rpx;height:26rpx;margin-right:6rpx"></image>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/product/product.wxml-->
+<image src="/images/timg.jpg" style="width:100%;height:380rpx;"></image>
+
+<view class="productBox">
+  <view class="title">{{content.title}}</view>
+
+  <checkbox-group bindchange="checkboxChange">
+    <view class="checkbox" wx:for="{{content.list}}" wx:key="product" wx:for-item="product" >
+
+      <view class="row" >
+        <checkbox color="#FDBC28" value="{{product.id}}" disabled="{{content.dingzhi==1?false:true}}" 
+        checked="{{product.selected==1?true:false}}" data-id="{{product.id}}"/>
+        <text>{{product.name}}</text>
+      </view>
+      <view wx:for="{{product.neironglist}}" class="row">{{item}}</view>
+    </view>
+  </checkbox-group>
+
+  <view class="submit" bindtap="submit">下单</view>
+</view>

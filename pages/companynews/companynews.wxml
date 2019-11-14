@@ -1,0 +1,12 @@
+<!--pages/companynews/companynews.wxml-->
+<view class="listBox">
+  <view class="listItem" wx:for="{{newsData}}" wx:key="*this">
+    <view class="topline">
+      <view class="title">{{item.title}}</view>
+      <view class="time">{{item.time}}</view>
+    </view>
+    <view class="remark">
+      {{item.yinwen}}
+    </view>
+  </view>
+</view>

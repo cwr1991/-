@@ -1,0 +1,2 @@
+<!--pages/payimg/payimg.wxml-->
+<image class="payimg" src="/images/payimg.jpg" show-menu-by-longpress="true"></image>

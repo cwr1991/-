@@ -1,0 +1,30 @@
+/* pages/commentlist/commentlist.wxss */
+.listItem{
+  padding: 21rpx 0;
+  margin: 0 28rpx;
+  border-bottom: 1px solid #EEEEEE;
+  display: flex;
+}
+.listItem .userhead{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-right:33rpx; 
+}
+.listItem .rightInfo{
+  flex: 1;
+}
+.rightInfo .username{
+  color: #1E1E1E;
+  font-size: 24rpx;
+}
+.rightInfo .comment{
+  color: #6B6B6B;
+  font-size: 20rpx;
+  margin: 30rpx 0 6rpx;
+}
+.rightInfo .address{
+  text-align: right;
+  color: #333333;
+  font-size: 20rpx;
+}

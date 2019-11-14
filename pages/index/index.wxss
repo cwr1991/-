@@ -1,0 +1,68 @@
+/**index.wxss**/
+
+.swiper-container{
+  background: #f9ab17;
+  padding: 30rpx;
+  /* padding-bottom:0;  */
+  position: relative;
+  height: 320rpx;
+  box-sizing: border-box;
+}
+.swiper-container swiper{
+  width: 100%;
+  height: 100%;
+
+}
+.swiper-container swiper-item{
+  border-bottom: 2rpx solid #eee
+}
+.swiper-container swiper-item image{
+  width:690rpx;
+  height: 280rpx;
+  border-radius: 15rpx;
+}
+
+/* 主要数据部分 */
+.mainwork{
+  background: #fff;
+  padding: 30rpx 0;
+  /* position: relative;
+  top: -10rpx;
+  z-index: 9; */
+}
+.mainwork .graybg{
+  background: #eee;
+  padding-left: 36rpx;
+}
+.graybg text{
+  font-size: 24rpx;
+  color: #282828
+}
+.mainwork .graybg image{
+  width: 31rpx;
+  height: 31rpx;
+  margin-right: 18rpx;
+  vertical-align: middle;
+}
+
+.mainwork .service{
+  /* padding: 40rpx 54rpx 0; */
+  padding: 0 54rpx;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mainwork .service .service-item{
+  text-align: center;
+  width: 25%;
+  margin-bottom: 40rpx;
+}
+.mainwork .service .service-item image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.mainwork .service .service-item text{
+  display: block;
+  font-size: 24rpx;
+}

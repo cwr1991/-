@@ -1,0 +1,11 @@
+<!--pages/commentlist/commentlist.wxml-->
+<view class="list">
+  <view class="listItem" wx:for="{{commentlist}}" wx:key="*this"> 
+    <image class="userhead" src="{{item.headimgurl}}"></image>
+    <view class="rightInfo">
+      <view class="username">{{item.nickname}}</view>
+      <view class="comment">{{item.text}}</view>
+      <view class="address">{{item.address}}</view>
+    </view>
+  </view>
+</view>

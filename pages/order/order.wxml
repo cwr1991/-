@@ -1,0 +1,33 @@
+<!--pages/order/order.wxml-->
+<!-- <view class="nav">
+  <text wx:for="{{nav}}" wx:key="index" data-idx="{{index}}" bindtap="currentTab" class="{{currentTab==index ? 'active' : ''}}">{{item}}
+  </text>
+</view> -->
+
+<view class="orderlist">
+  <view class="orderItem" wx:if="{{orderlist!='暂无数据'}}" wx:for="{{orderlist}}" wx:key="index" data-index="{{index}}" data-id="{{item.id}}" bindtap="todetail">
+    <view class="orderNo">
+      <view>订单号：{{item.order_no}}</view>
+      <text>客服电话：{{calltel}}</text>
+    </view>
+    <view class="orderTime">
+      <image src="/images/time@2x.png"></image>
+      <view>下单时间：{{item.start_time}}</view>
+    </view>
+    <view class="orderAddress">
+      <view>服务地址:</view>
+      <view>{{item.address}}</view>
+    </view>
+    <view class="orderContent">
+      <view>服务项目：</view>
+      <view>{{item.xiangmulist}}</view>
+    </view>
+    <view class="orderCalltel">
+      <view catchtap="calltel">拨打客服电话</view>
+    </view>
+    
+  </view>
+
+  <view wx:if="{{nomore}}" class="nomore">没有更多了</view>
+
+</view>

@@ -1,0 +1,38 @@
+/* pages/orderDetail/orderDetail.wxss */
+.list{
+  background: #fff;
+}
+.listItem{
+  padding: 30rpx;
+  border-bottom: 2rpx solid #959595;
+  display: flex;
+}
+.listItem image{
+  width:176rpx;
+  height: 176rpx;
+  border-radius: 10rpx;
+}
+.listItem .right{
+  flex: 1;
+  font-size: 24rpx;
+  color: #282828;
+  margin-left:20rpx;
+}
+.listItem .right .row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 23rpx;
+}
+.listItem .right .row .rowright{
+  color: #FDBC28;
+}
+.listItem .right .yanshou{
+  display: flex;
+  justify-content: flex-end;
+}
+.listItem .right .yanshou text{
+  color: #FEFEFE;
+  background: #FDBC28;
+  padding: 10rpx 33rpx;
+  border-radius:40rpx;
+}

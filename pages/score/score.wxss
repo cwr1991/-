@@ -1,0 +1,35 @@
+/* pages/score/score.wxss */
+page{
+  height: 100%;
+}
+.top{
+  text-align: center;
+}
+.list{
+  margin-top: 40rpx;
+}
+.item{
+  margin-bottom: 30rpx;
+  padding: 0 30rpx;
+}
+.title{
+  margin-bottom: 20rpx;
+}
+radio-group{
+  display: flex;
+  align-items: center;
+}
+radio{
+  margin-right:40rpx;
+}
+
+.btn{
+  width: 600rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 30rpx;
+  background: #43cf7c;
+  color:#fff;
+  text-align: center;
+  margin: 200rpx auto 50rpx;
+}

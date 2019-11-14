@@ -1,0 +1,45 @@
+/* pages/product/product.wxss */
+
+.productBox {
+}
+
+.productBox .title {
+  text-align: center;
+  font-size: 34rpx;
+  margin: 30rpx 0;
+  color: #282828;
+}
+
+.checkbox {
+  margin-bottom: 50rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #959595;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  padding: 10rpx 20rpx;
+  color: #282828;
+  font-size: 30rpx;
+}
+
+.row:nth-of-type(1) {
+  background: #fdbc28;
+}
+
+.row:nth-of-type(1) text {
+  text-indent: 230rpx;
+}
+
+.submit {
+  width: 650rpx;
+  height: 80rpx;
+  background: rgba(253, 188, 40, 1);
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: #FFF;
+  font-size: 30rpx;
+  margin: 30rpx auto;
+}

@@ -1,0 +1,53 @@
+/* pages/address/address.wxss */
+page{
+  background: #fff; 
+}
+.form{
+  padding: 50rpx 50rpx 0;
+}
+.form .item{
+  margin-bottom: 15rpx;
+}
+.form .item text{
+  color: #797979;
+  font-size: 24rpx;
+}
+.form .item .weui-input{
+  border: 1px solid #959595;
+  border-radius: 10rpx;
+  padding-left: 30rpx;
+  height: 80rpx;
+  margin-top: 15rpx;
+  box-sizing: border-box;
+  color: #666;
+
+}
+.form .item picker{
+  padding-top:15rpx;
+  color: #BFBFC2;
+}
+.placeholder{
+  font-size: 30rpx;
+  color: #BFBFC2;
+}
+.autobtn{
+  width: 650rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background: #FFBA00;
+  color: #282828;
+  font-size: 30rpx;
+  margin-top: 40rpx;
+  border-radius: 5rpx;
+}
+
+.xiadan{
+  width: 100%;
+  height: 80rpx;
+  background: #FFBA00;
+  text-align: center;
+  line-height: 80rpx;
+  position: fixed;
+  bottom: 0;
+}

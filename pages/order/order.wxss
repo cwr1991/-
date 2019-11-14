@@ -1,0 +1,91 @@
+/* pages/order/order.wxss */
+page {
+  
+  background: #f1f1f3;
+}
+/* .nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+}
+.nav text{
+  padding: 32rpx 35rpx;
+  font-size: 30rpx;
+}
+.active{
+  color: #FDBC28;
+  border-bottom: 2px solid #FDBC28;
+} */
+
+/* 订单列表 */
+.orderlist{
+
+}
+.orderItem{
+  margin-top: 25rpx;
+  background: #fff;
+  padding: 23rpx 38rpx;
+  font-size: 24rpx;
+  color: #666666;
+}
+.orderItem .orderNo{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32rpx;
+}
+.orderItem .orderNo view{
+  color: #333333
+}
+.orderItem .orderNo text{
+  color: #FDBC28
+}
+.orderItem .orderTime{
+  display: flex;
+  align-items: center;
+  margin-bottom: 32rpx;
+
+}
+.orderItem .orderTime image{
+  width: 32rpx;
+  height:35rpx;
+  margin-right: 12rpx;
+}
+.orderItem .orderAddress{
+  display: flex;
+  margin-bottom: 32rpx;
+
+}
+.orderAddress view:nth-child(2){
+  width: 60%;
+  margin-left: 10rpx;
+}
+
+.orderItem .orderContent{
+  font-size: 26rpx;
+  color: #333;
+  display: flex;
+  margin-bottom: 32rpx;
+}
+
+.orderItem .orderCalltel{
+  display: flex;
+  justify-content: flex-end;
+  color: #FDBC28;
+}
+.orderItem .orderCalltel view{
+  padding: 13rpx;
+  border: 1px solid #FDBC28;
+  border-radius: 30rpx;
+}
+.nomore{
+  text-align:center;
+  font-size:26rpx;
+  color:#999;
+  padding:20rpx 0;
+}
